@@ -1,0 +1,239 @@
+{
+  "users": [
+    {
+      "id": "usr-1",
+      "name": "Nishant Admin",
+      "email": "admin@transitops.com",
+      "passwordHash": "$2b$10$abcdefghijklmnopqrstu.hashedadminpwd123",
+      "role": "Admin",
+      "status": "Active"
+    },
+    {
+      "id": "usr-2",
+      "name": "Marcus Fleet",
+      "email": "manager@transitops.com",
+      "passwordHash": "$2b$10$abcdefghijklmnopqrstu.hashedmanagerpwd123",
+      "role": "FleetManager",
+      "status": "Active"
+    },
+    {
+      "id": "usr-3",
+      "name": "Alex Driver",
+      "email": "driver@transitops.com",
+      "passwordHash": "$2b$10$abcdefghijklmnopqrstu.hasheddriverpwd123",
+      "role": "Driver",
+      "status": "Active"
+    },
+    {
+      "id": "usr-4",
+      "name": "Sarah Safety",
+      "email": "safety@transitops.com",
+      "passwordHash": "$2b$10$abcdefghijklmnopqrstu.hashedsafetypwd123",
+      "role": "SafetyOfficer",
+      "status": "Active"
+    },
+    {
+      "id": "usr-5",
+      "name": "Fiona Finance",
+      "email": "finance@transitops.com",
+      "passwordHash": "$2b$10$abcdefghijklmnopqrstu.hashedfinancepwd123",
+      "role": "FinancialAnalyst",
+      "status": "Active"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "veh-1",
+      "registrationNumber": "CA-992-FL",
+      "nameModel": "Freightliner M2 106",
+      "type": "Heavy Truck",
+      "maxLoadCapacity": 12000,
+      "odometer": 145200,
+      "acquisitionCost": 85000,
+      "status": "Available",
+      "region": "West Coast"
+    },
+    {
+      "id": "veh-2",
+      "registrationNumber": "TX-817-TX",
+      "nameModel": "Ford F-550 Super Duty",
+      "type": "Flatbed",
+      "maxLoadCapacity": 8000,
+      "odometer": 82400,
+      "acquisitionCost": 62000,
+      "status": "OnTrip",
+      "region": "South Region"
+    },
+    {
+      "id": "veh-3",
+      "registrationNumber": "NY-334-OP",
+      "nameModel": "Mercedes-Benz Sprinter 3500",
+      "type": "Cargo Van",
+      "maxLoadCapacity": 3500,
+      "odometer": 42100,
+      "acquisitionCost": 48000,
+      "status": "InShop",
+      "region": "East Coast"
+    },
+    {
+      "id": "veh-4",
+      "registrationNumber": "FL-205-TR",
+      "nameModel": "Volvo VNL 860",
+      "type": "Semi-Truck",
+      "maxLoadCapacity": 24000,
+      "odometer": 289000,
+      "acquisitionCost": 140000,
+      "status": "Retired",
+      "region": "East Coast"
+    },
+    {
+      "id": "veh-5",
+      "registrationNumber": "Van-05",
+      "nameModel": "Ford Transit 250",
+      "type": "Light Van",
+      "maxLoadCapacity": 1500,
+      "odometer": 12000,
+      "acquisitionCost": 35000,
+      "status": "Available",
+      "region": "Midwest"
+    }
+  ],
+  "drivers": [
+    {
+      "id": "drv-1",
+      "name": "Alex Rivera",
+      "licenseNumber": "DL-9948271",
+      "licenseCategory": "Class A CDL",
+      "licenseExpiryDate": "2028-11-15",
+      "contactNumber": "+1 (555) 019-2831",
+      "safetyScore": 94,
+      "status": "Available"
+    },
+    {
+      "id": "drv-2",
+      "name": "Marcus Vance",
+      "licenseNumber": "DL-4819283",
+      "licenseCategory": "Class B CDL",
+      "licenseExpiryDate": "2027-04-20",
+      "contactNumber": "+1 (555) 014-9982",
+      "safetyScore": 88,
+      "status": "OnTrip"
+    },
+    {
+      "id": "drv-3",
+      "name": "Sarah Jenkins",
+      "licenseNumber": "DL-1092834",
+      "licenseCategory": "Standard Class C",
+      "licenseExpiryDate": "2026-09-12",
+      "contactNumber": "+1 (555) 012-3849",
+      "safetyScore": 99,
+      "status": "Available"
+    },
+    {
+      "id": "drv-4",
+      "name": "Dave Miller",
+      "licenseNumber": "DL-8827391",
+      "licenseCategory": "Class A CDL",
+      "licenseExpiryDate": "2023-01-10",
+      "contactNumber": "+1 (555) 018-4923",
+      "safetyScore": 72,
+      "status": "OffDuty"
+    },
+    {
+      "id": "drv-5",
+      "name": "Robert Taylor",
+      "licenseNumber": "DL-5527182",
+      "licenseCategory": "Class A CDL",
+      "licenseExpiryDate": "2027-06-30",
+      "contactNumber": "+1 (555) 015-8827",
+      "safetyScore": 64,
+      "status": "Suspended"
+    }
+  ],
+  "trips": [
+    {
+      "id": "trp-1",
+      "source": "Warehouse Alpha, Seattle",
+      "destination": "Distribution Center, Los Angeles",
+      "vehicleId": "veh-1",
+      "driverId": "drv-1",
+      "cargoWeight": 10500,
+      "plannedDistance": 1140,
+      "status": "Completed",
+      "finalOdometer": 146340,
+      "fuelConsumed": 380,
+      "createdAt": "2026-07-01T10:00:00.000Z"
+    },
+    {
+      "id": "trp-2",
+      "source": "Houston Port Terminal",
+      "destination": "Logistics Hub, Dallas",
+      "vehicleId": "veh-2",
+      "driverId": "drv-2",
+      "cargoWeight": 7200,
+      "plannedDistance": 240,
+      "status": "Dispatched",
+      "createdAt": "2026-07-10T14:30:00.000Z"
+    },
+    {
+      "id": "trp-3",
+      "source": "Chicago Depot",
+      "destination": "Retail Center, Indianapolis",
+      "vehicleId": "veh-5",
+      "driverId": "drv-3",
+      "cargoWeight": 1200,
+      "plannedDistance": 180,
+      "status": "Draft",
+      "createdAt": "2026-07-11T09:15:00.000Z"
+    }
+  ],
+  "maintenanceLogs": [
+    {
+      "id": "mnt-1",
+      "vehicleId": "veh-3",
+      "description": "Brake pad replacement and transmission fluid flush.",
+      "status": "Active",
+      "createdDate": "2026-07-09T08:00:00.000Z"
+    },
+    {
+      "id": "mnt-2",
+      "vehicleId": "veh-1",
+      "description": "Standard engine oil change and 24-point safety check.",
+      "status": "Closed",
+      "createdDate": "2026-06-15T09:00:00.000Z",
+      "closedDate": "2026-06-15T14:30:00.000Z"
+    }
+  ],
+  "fuelLogs": [
+    {
+      "id": "fuel-1",
+      "vehicleId": "veh-1",
+      "liters": 380,
+      "cost": 650,
+      "date": "2026-07-03"
+    },
+    {
+      "id": "fuel-2",
+      "vehicleId": "veh-2",
+      "liters": 85,
+      "cost": 148,
+      "date": "2026-07-10"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "exp-1",
+      "vehicleId": "veh-1",
+      "type": "Toll",
+      "amount": 45,
+      "date": "2026-07-02"
+    },
+    {
+      "id": "exp-2",
+      "vehicleId": "veh-3",
+      "type": "Maintenance Cost",
+      "amount": 450,
+      "date": "2026-07-09"
+    }
+  ]
+}
